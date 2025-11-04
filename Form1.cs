@@ -13,6 +13,10 @@ namespace Topic_12_13_GUI_Assignment_1
     public partial class FormSandwichOrder : Form
     {
         double totalPrice;
+        Random generator = new Random();
+
+        string size, bread, cheese;
+        List<string> toppings = new List<string>();
 
         public FormSandwichOrder()
         {
@@ -41,6 +45,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radDairyFreeCheese.Checked)
             {
                 Cheese();
+                cheese = "dairy-free";
             }
             else if (!radDairyFreeCheese.Checked)
             {
@@ -55,6 +60,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radAmericanCheese.Checked)
             {
                 Cheese();
+                cheese = "American";
             }
             else if (!radAmericanCheese.Checked)
             {
@@ -174,6 +180,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radSmall.Checked)
             {
                 Size();
+                size = "Small";
             }
             else if (!radSmall.Checked)
             {
@@ -188,6 +195,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radRegular.Checked)
             {
                 Size();
+                size = "Regular";
             }
             else if (!radRegular.Checked)
             {
@@ -202,6 +210,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radLarge.Checked)
             {
                 Size();
+                size = "Large";
             }
             else if (!radLarge.Checked)
             {
@@ -214,16 +223,19 @@ namespace Topic_12_13_GUI_Assignment_1
         private void radWholeWheat_CheckedChanged(object sender, EventArgs e)
         {
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
+            bread = "whole wheat";
         }
 
         private void radMultiGrain_CheckedChanged(object sender, EventArgs e)
         {
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
+            bread = "multi-grain";
         }
 
         private void radWhiteBread_CheckedChanged(object sender, EventArgs e)
         {
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
+            bread = "white";
         }
 
         private void radGlutenFree_CheckedChanged(object sender, EventArgs e)
@@ -231,6 +243,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radGlutenFree.Checked)
             {
                 Bread();
+                bread = "gluten free";
             }
             else if (!radGlutenFree.Checked)
             {
@@ -245,6 +258,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radCheesyBread.Checked)
             {
                 Bread();
+                bread = "cheesy";
             }
             else if (!radCheesyBread.Checked)
             {
@@ -259,6 +273,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (chkHam.Checked)
             {
                 Toppings1();
+                toppings.Add("ham");
             }
             else if (!chkHam.Checked)
             {
@@ -273,6 +288,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (chkTurkey.Checked)
             {
                 Toppings1();
+                toppings.Add("turkey");
             }
             else if (!chkTurkey.Checked)
             {
@@ -287,6 +303,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (chkChicken.Checked)
             {
                 Toppings1();
+                toppings.Add("chicken");
             }
             else if (!chkChicken.Checked)
             {
@@ -301,6 +318,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (chkBacon.Checked)
             {
                 Toppings1();
+                toppings.Add("bacon");
             }
             else if (!chkBacon.Checked)
             {
@@ -315,6 +333,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if(chkOnion.Checked)
             {
                 Toppings2();
+                toppings.Add("onion");
             }
             else if (!chkBacon.Checked)
             {
@@ -329,6 +348,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (chkTomato.Checked)
             {
                 Toppings2();
+                toppings.Add("tomato");
             }
             else if (!chkTomato.Checked)
             {
@@ -343,6 +363,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (chkCucumber.Checked)
             {
                 Toppings2();
+                toppings.Add("cucumber");
             }
             else if (!chkCucumber.Checked)
             {
@@ -357,6 +378,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (chkLettuce.Checked)
             {
                 Toppings2();
+                toppings.Add("lettuce");
             }
             else if (!chkLettuce.Checked)
             {
@@ -371,6 +393,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radCheddar.Checked)
             {
                 Cheese();
+                cheese = "cheddar";
             }
             else if (!radCheddar.Checked)
             {
@@ -385,6 +408,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radParmesan.Checked)
             {
                 Cheese();
+                cheese = "parmesan";
             }
             else if (!radParmesan.Checked)
             {
@@ -399,6 +423,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radSwiss.Checked)
             {
                 Cheese();
+                cheese = "swiss";
             }
             else if (!radSwiss.Checked)
             {
@@ -413,6 +438,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radMozzarella.Checked)
             {
                 Cheese();
+                cheese = "mozzarella";
             }
             else if (!radMozzarella.Checked)
             {
@@ -427,6 +453,7 @@ namespace Topic_12_13_GUI_Assignment_1
             if (radGouda.Checked)
             {
                 Cheese();
+                cheese = "gouda";
             }
             else if (!radGouda.Checked)
             {
@@ -436,9 +463,43 @@ namespace Topic_12_13_GUI_Assignment_1
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
+        private void chkMayo_CheckedChanged(object sender, EventArgs e)
+        {
+            toppings.Add("mayonnaise");
+        }
+
+        private void chkRanch_CheckedChanged(object sender, EventArgs e)
+        {
+            toppings.Add("ranch dressing");
+        }
+
+        private void chkMustard_CheckedChanged(object sender, EventArgs e)
+        {
+            toppings.Add("mustard");
+        }
+
+        private void chkTeriyaki_CheckedChanged(object sender, EventArgs e)
+        {
+            toppings.Add("teriyaki sauce");
+        }
+
         private void radFlatbread_CheckedChanged(object sender, EventArgs e)
         {
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
+            bread = "flatbread";
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string message = "Thank you for your order! Your total is: " + totalPrice.ToString("C") + "\n\n" +
+                "Your order: " + size + " sandwich on " + bread + " bread with " + cheese + " cheese, " + string.Join(", ", toppings);
+            string title = "Order #" + generator.Next(0, 10000);
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+            DialogResult result = MessageBox.Show(message, title, buttons);
+            if (result == DialogResult.OK)
+            {
+                this.Close();
+            }
         }
     }
 }

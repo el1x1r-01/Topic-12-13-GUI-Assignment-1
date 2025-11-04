@@ -397,6 +397,7 @@
             this.chkTeriyaki.TabIndex = 17;
             this.chkTeriyaki.Text = "Teriyaki sauce";
             this.chkTeriyaki.UseVisualStyleBackColor = false;
+            this.chkTeriyaki.CheckedChanged += new System.EventHandler(this.chkTeriyaki_CheckedChanged);
             // 
             // chkMustard
             // 
@@ -411,6 +412,7 @@
             this.chkMustard.TabIndex = 16;
             this.chkMustard.Text = "Mustard";
             this.chkMustard.UseVisualStyleBackColor = false;
+            this.chkMustard.CheckedChanged += new System.EventHandler(this.chkMustard_CheckedChanged);
             // 
             // chkRanch
             // 
@@ -425,6 +427,7 @@
             this.chkRanch.TabIndex = 15;
             this.chkRanch.Text = "Ranch dressing";
             this.chkRanch.UseVisualStyleBackColor = false;
+            this.chkRanch.CheckedChanged += new System.EventHandler(this.chkRanch_CheckedChanged);
             // 
             // chkMayo
             // 
@@ -439,6 +442,7 @@
             this.chkMayo.TabIndex = 14;
             this.chkMayo.Text = "Mayonnaise";
             this.chkMayo.UseVisualStyleBackColor = false;
+            this.chkMayo.CheckedChanged += new System.EventHandler(this.chkMayo_CheckedChanged);
             // 
             // grpCheese
             // 
@@ -630,6 +634,7 @@
             this.btnSubmit.TabIndex = 22;
             this.btnSubmit.Text = "Submit order";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnRestart
             // 
