@@ -46,6 +46,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 3);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void radAmericanCheese_CheckedChanged(object sender, EventArgs e)
@@ -58,6 +60,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 1);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         public void Size()
@@ -175,6 +179,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 4);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void radRegular_CheckedChanged(object sender, EventArgs e)
@@ -187,6 +193,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 6.5);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void radLarge_CheckedChanged(object sender, EventArgs e)
@@ -199,6 +207,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 8);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void radWholeWheat_CheckedChanged(object sender, EventArgs e)
@@ -226,6 +236,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 2);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void radCheesyBread_CheckedChanged(object sender, EventArgs e)
@@ -238,6 +250,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 2);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void chkHam_CheckedChanged(object sender, EventArgs e)
@@ -250,6 +264,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 1);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void chkTurkey_CheckedChanged(object sender, EventArgs e)
@@ -262,6 +278,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 1);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void chkChicken_CheckedChanged(object sender, EventArgs e)
@@ -274,6 +292,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 1);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void chkBacon_CheckedChanged(object sender, EventArgs e)
@@ -286,6 +306,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 1);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void chkOnion_CheckedChanged(object sender, EventArgs e)
@@ -298,6 +320,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 0.5);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void chkTomato_CheckedChanged(object sender, EventArgs e)
@@ -310,6 +334,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 0.5);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void chkCucumber_CheckedChanged(object sender, EventArgs e)
@@ -322,6 +348,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 0.5);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void chkLettuce_CheckedChanged(object sender, EventArgs e)
@@ -334,6 +362,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 0.5);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void radCheddar_CheckedChanged(object sender, EventArgs e)
@@ -346,6 +376,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 1);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void radParmesan_CheckedChanged(object sender, EventArgs e)
@@ -358,6 +390,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 1);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void radSwiss_CheckedChanged(object sender, EventArgs e)
@@ -370,6 +404,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 1);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void radMozzarella_CheckedChanged(object sender, EventArgs e)
@@ -382,6 +418,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 1);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void radGouda_CheckedChanged(object sender, EventArgs e)
@@ -394,6 +432,8 @@ namespace Topic_12_13_GUI_Assignment_1
             {
                 totalPrice = (totalPrice - 1);
             }
+
+            lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
         }
 
         private void radFlatbread_CheckedChanged(object sender, EventArgs e)
