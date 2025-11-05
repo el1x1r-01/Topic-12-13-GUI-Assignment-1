@@ -15,7 +15,7 @@ namespace Topic_12_13_GUI_Assignment_1
         double totalPrice;
         Random generator = new Random();
 
-        string size, bread, cheese;
+        string size, bread = "invisible", cheese = "no";
         List<string> toppings = new List<string>();
 
         public FormSandwichOrder()
@@ -278,6 +278,7 @@ namespace Topic_12_13_GUI_Assignment_1
             else if (!chkHam.Checked)
             {
                 totalPrice = (totalPrice - 1);
+                toppings.Remove("ham");
             }
 
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
@@ -293,6 +294,7 @@ namespace Topic_12_13_GUI_Assignment_1
             else if (!chkTurkey.Checked)
             {
                 totalPrice = (totalPrice - 1);
+                toppings.Remove("turkey");
             }
 
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
@@ -308,6 +310,7 @@ namespace Topic_12_13_GUI_Assignment_1
             else if (!chkChicken.Checked)
             {
                 totalPrice = (totalPrice - 1);
+                toppings.Remove("chicken");
             }
 
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
@@ -323,6 +326,7 @@ namespace Topic_12_13_GUI_Assignment_1
             else if (!chkBacon.Checked)
             {
                 totalPrice = (totalPrice - 1);
+                toppings.Remove("bacon");
             }
 
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
@@ -338,6 +342,7 @@ namespace Topic_12_13_GUI_Assignment_1
             else if (!chkBacon.Checked)
             {
                 totalPrice = (totalPrice - 0.5);
+                toppings.Remove("onion");
             }
 
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
@@ -353,6 +358,7 @@ namespace Topic_12_13_GUI_Assignment_1
             else if (!chkTomato.Checked)
             {
                 totalPrice = (totalPrice - 0.5);
+                toppings.Remove("tomato");
             }
 
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
@@ -368,6 +374,7 @@ namespace Topic_12_13_GUI_Assignment_1
             else if (!chkCucumber.Checked)
             {
                 totalPrice = (totalPrice - 0.5);
+                toppings.Remove("cucumber");
             }
 
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
@@ -383,6 +390,8 @@ namespace Topic_12_13_GUI_Assignment_1
             else if (!chkLettuce.Checked)
             {
                 totalPrice = (totalPrice - 0.5);
+
+                toppings.Remove("lettuce");
             }
 
             lblTotalPrice.Text = "Total price = " + totalPrice.ToString("C");
@@ -465,22 +474,50 @@ namespace Topic_12_13_GUI_Assignment_1
 
         private void chkMayo_CheckedChanged(object sender, EventArgs e)
         {
-            toppings.Add("mayonnaise");
+            if (chkMayo.Checked)
+            {
+                toppings.Add("mayonnaise");
+            }
+            else if (!chkMayo.Checked)
+            {
+                toppings.Remove("mayonnaise");
+            }
         }
 
         private void chkRanch_CheckedChanged(object sender, EventArgs e)
         {
-            toppings.Add("ranch dressing");
+            if (chkRanch.Checked)
+            {
+                toppings.Add("ranch dressing");
+            }
+            else if (!chkRanch.Checked)
+            {
+                toppings.Remove("ranch dressing");
+            }
         }
 
         private void chkMustard_CheckedChanged(object sender, EventArgs e)
         {
-            toppings.Add("mustard");
+            if (chkMustard.Checked)
+            {
+                toppings.Add("mustard");
+            }
+            else if (!chkMustard.Checked)
+            {
+                toppings.Remove("mustard");
+            }
         }
 
         private void chkTeriyaki_CheckedChanged(object sender, EventArgs e)
         {
-            toppings.Add("teriyaki sauce");
+            if (chkTeriyaki.Checked)
+            {
+                toppings.Add("teriyaki sauce");
+            }
+            else if (!chkTeriyaki.Checked)
+            {
+                toppings.Remove("teriyaki sauce");
+            }
         }
 
         private void radFlatbread_CheckedChanged(object sender, EventArgs e)
